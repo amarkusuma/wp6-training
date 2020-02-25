@@ -33,7 +33,7 @@ class Autocomplite
                 'posts_per_page' => '5',
             ));
             while ($loop->have_posts()) {
-                $loop->the_post();
+                // $loop->the_post();
                 $items = get_the_title();
                 echo "<p>$items</p>";
             }
