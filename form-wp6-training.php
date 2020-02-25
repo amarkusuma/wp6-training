@@ -35,8 +35,7 @@ class Autocomplite
             while ($loop->have_posts()) {
                 $loop->the_post();
                 $items = get_the_title();
-                $data = json_encode($items);
-                echo "<p>$data</p>";
+                echo "<p>$items</p>";
             }
         }
     }
