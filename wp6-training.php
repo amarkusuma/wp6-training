@@ -1,7 +1,7 @@
 <?php
 /*
-Plugin Name: Autocomplite
-Description: Input Autocomplite with Ajax
+Plugin Name: autocomplete
+Description: Input autocomplete with Ajax
 Author: Ammar
 */
 
@@ -14,7 +14,7 @@ function my_enqueue()
     $my_css_ver = date("ymd-Gis", filemtime(plugin_dir_path(__FILE__) . 'assets/jquery.css'));
     wp_register_style('my_css',    plugins_url('assets/jquery.css',    __FILE__), false,   $my_css_ver);
     wp_enqueue_style('my_css');
-    wp_enqueue_script('ajax-script', plugins_url('/assets/autocomplite.js', __FILE__), array('jquery', 'jquery-ui-core', 'jquery-ui-autocomplete'));
+    wp_enqueue_script('ajax-script', plugins_url('/assets/autocomplete.js', __FILE__), array('jquery', 'jquery-ui-core', 'jquery-ui-autocomplete'));
     wp_localize_script('ajax-script', 'ajax_object', array('ajax_url' => admin_url('admin-ajax.php')));
 }
 

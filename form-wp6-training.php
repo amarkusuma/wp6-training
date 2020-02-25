@@ -1,10 +1,10 @@
 <?php
 
-$autocomplite = new Autocomplite();
-add_shortcode('wp6_training', [$autocomplite, 'fomPage']);
+$autocomplete = new Autocomplete();
+add_shortcode('wp6_training', [$autocomplete, 'fomPage']);
 
 
-class Autocomplite
+class Autocomplete
 {
 
     function html_form_code()
